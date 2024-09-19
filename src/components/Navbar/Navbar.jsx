@@ -67,6 +67,13 @@ const Navbar = () => {
                 <Link to="/learn-more" className="learn-more-btn">Learn More</Link>
             </div>
         </header>
+        <div className="values-banner">
+                <ul>
+                    <li>Empower</li>
+                    <li>Equip</li>
+                    <li>Educate</li>
+                </ul>
+            </div>
         {/* Overlay for background when menu is active */}
         <div className={`overlay ${sideNav ? "active" : ""}`} onClick={() => closeMenu(activeLink)}></div>
         </>
