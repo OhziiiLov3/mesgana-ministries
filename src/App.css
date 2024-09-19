@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary-color: #edcf3e; /* main Yellow */
+  --secondary-yellow: #EEBA2B; /* medium Yellow */
+  --secondary-color: #333333; /* Dark gray */
+  --darker-yellow: #e09c00; /* Darker yellow */
+  --background-color: #F7EDE2; /* Light gray for background */
+}
+
+
+*{
+  box-sizing: border-box;
+  max-height: 100vh;
+  margin: 0;
+}
+
+
+body{
+  font-family:  "Montserrat", sans-serif;
+}
+
