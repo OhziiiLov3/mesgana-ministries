@@ -6,13 +6,16 @@ import OurWork from '../pages/OurWork';
 import GetInvolved from '../pages/GetInvolved';
 import Footer from './Footer/Footer';
 import Navbar from './Navbar/Navbar';
+import { useState } from 'react';
 
 function App() {
+  const [activeLink, setActiveLink] = useState(null)
+ 
   return (
     <Router>
         <div className='app'>
         {/* Navigation */}
-       <Navbar/>
+       <Navbar setActiveLink={setActiveLink} />
           {/* Pages for Routes */}
           <div className="main-content">
           <Routes>
@@ -22,7 +25,7 @@ function App() {
             <Route path="/get-involved" element={<GetInvolved/>}></Route>
           </Routes>
           </div>
-      <Footer/>
+      <Footer setActiveLink={setActiveLink} />
       </div>
     </Router>
      

@@ -6,13 +6,14 @@ import logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
     const [sideNav, setSideNav] = useState(false);
-    const [activeLink, setActiveLink] = useState(null); // Track which link is clicked
+    const [activeLinkState, setActiveLinkState] = useState(null); 
 
 
     const handleClick = () => setSideNav(!sideNav);
+
     const closeMenu = (path) => {
         setSideNav(false);
-        setActiveLink(path); 
+        setActiveLinkState(path); 
     };
 
     return (
@@ -23,35 +24,20 @@ const Navbar = () => {
                 <img src={logo} alt="" />
             </div>
 
-            <nav className={`navbar-links ${sideNav ? "active" : ""}`}>
-                <Link 
-                    to="/" 
-                    onClick={() => closeMenu("/")}
-                    className={activeLink === "/" ? "active" : ""} 
-                >
-                    Home
+            <nav className={`navbar-links ${sideNav ? "active" : ""}`}>     
+                <Link to="/" onClick={() => closeMenu("/")} className={activeLinkState === "/" ? "active" : ""}>
+                  Home
                 </Link>
-                <Link 
-                    to="/our-work" 
-                    onClick={() => closeMenu("/our-work")}
-                    className={activeLink === "/our-work" ? "active" : ""}
-                >
-                    Our Work
+                <Link to="/our-work" onClick={() => closeMenu("/our-work")} className={activeLinkState === "/our-work" ? "active" : ""}>
+                  Our Work
                 </Link>
-                <Link 
-                    to="/contact" 
-                    onClick={() => closeMenu("/contact")}
-                    className={activeLink === "/contact" ? "active" : ""}
-                >
-                    Contact
+                <Link to="/contact" onClick={() => closeMenu("/contact")} className={activeLinkState === "/contact" ? "active" : ""}>
+                  Contact
                 </Link>
-                <Link 
-                    to="/get-involved" 
-                    onClick={() => closeMenu("/get-involved")}
-                    className={activeLink === "/get-involved" ? "active" : ""}
-                >
-                    Get Involved
+                <Link to="/get-involved" onClick={() => closeMenu("/get-involved")} className={activeLinkState === "/get-involved" ? "active" : ""}>
+                  Get Involved
                 </Link>
+
             </nav>
             </div>
 
@@ -67,6 +53,7 @@ const Navbar = () => {
                 <Link to="/learn-more" className="learn-more-btn">Learn More</Link>
             </div>
         </header>
+
         <div className="values-banner">
                 <ul>
                     <li>Empower</li>

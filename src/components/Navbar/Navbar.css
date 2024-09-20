@@ -124,6 +124,17 @@
   color: #fff;
 }
 
+.active-line {
+    height: 4px; /* Adjust height as needed */
+    background-color: yellow; /* Change this to your yellow color */
+    transition: opacity 0.3s ease;
+  }
+  
+  .hidden {
+    opacity: 0; /* Hide the line */
+    height: 0; /* Optionally set height to 0 */
+  }
+
 
 /* Media query for mobile devices */
 @media (max-width: 832px) { 

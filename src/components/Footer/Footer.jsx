@@ -39,21 +39,21 @@ const Footer = () => {
           </div>
         </div>
         <div className="col col-3">
-          <ul>
+        <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={() => setActiveLink("/")}>Home</Link>
             </li>
             <li>
-              <Link to="/our-work">Our Work</Link>
+              <Link to="/our-work" onClick={() => setActiveLink("/our-work")}>Our Work</Link>
             </li>
             <li>
-              <Link to="/testimonies">Testimonies</Link>
+              <Link to="/testimonies" onClick={() => setActiveLink("/testimonies")}>Testimonies</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact" onClick={() => setActiveLink("/contact")}>Contact</Link>
             </li>
             <li>
-              <Link to="/get-involved">Get Involved</Link>
+              <Link to="/get-involved" onClick={() => setActiveLink("/get-involved")}>Get Involved</Link>
             </li>
           </ul>
         </div>
