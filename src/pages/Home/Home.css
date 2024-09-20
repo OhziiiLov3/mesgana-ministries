@@ -1,0 +1,243 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    width: 100%;
+    height: 60vh; 
+    background-image: url('src/assets/images/home-image.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px; /* Add padding for spacing */
+    color: #fff;
+  }
+  
+  .hero-content-col-1, .hero-content-col-2 {
+    flex: 1; /* Both columns will take equal width */
+  }
+  
+  .hero-content-col-1 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.8rem;
+  }
+  
+  .hero-content-col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 200px;
+  }
+   .hero-content-col-2 h1{
+    font-size: 1.8rem;
+    font-family: 700;
+   }
+   .hero-content-col-2 p{
+    font-weight: bold;
+    font-size: 1rem;
+   }
+  
+  /* Button inside hero section */
+  .hero-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--secondary-yellow);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+
+  
+  /* Yellow Banner */
+  .yellow-banner {
+    width: 100%;
+    background-color: var(--secondary-yellow);
+    padding: 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .banner-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 40px;
+    text-transform: capitalize;
+  }
+
+  .banner-content p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    font-weight: 600;
+   
+  }
+  
+  .banner-button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: var(--secondary-yellow);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .banner-button:hover {
+    background-color: #e09c00;
+    color: #ffffff;
+  }
+  
+  
+  /* Card Section */
+  .card-section {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    padding: 20px;
+    width: 70%;
+    margin: 10px 20px;
+  }
+  
+  .card {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: .85rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  }
+
+ .card-1{
+    background-image: url('src/assets/images/hero-image-2.png');
+  }
+
+  .card-2{
+    background-image: url('src/assets/images/hero-image-1.png');
+  }
+  
+  .card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    padding: 5px;
+  }
+
+  .card-overlay h2 {
+    margin-top: 140px;
+  }
+  
+  .card-button {
+    padding: 8px 16px;
+    background-color: var(--secondary-yellow);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  }
+
+  .card-button:hover {
+    background-color: var(--darker-yellow);
+  }
+  
+  /* Media Queries for responsiveness at 832px */
+  @media (max-width: 832px) {
+    .hero-section {
+      flex-direction: column;
+      height: 50vh;
+    }
+  
+    .hero-overlay {
+      flex-direction: column;
+      padding: 0 20px;
+    }
+  
+    .hero-content-col-1,
+    .hero-content-col-2 {
+      flex: none;
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 60px;
+    }
+  
+    .hero-content-col-1 {
+      font-size: 1.5rem;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  
+    .hero-content-col-2 h1 {
+      font-size: 1.4rem;
+     
+    }
+  
+    .yellow-banner {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .banner-content {
+        flex-direction: column;
+        margin: 0;
+      }
+     /* Card Section */
+     .card-section {
+        display: flex;
+        flex-direction: column; 
+        padding: 20px;
+        width: 100%; 
+        margin: 0 auto; 
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        width: 100%; 
+        max-width: 350px; 
+        margin: 10px 0; 
+        display: block; 
+
+      }
+    
+      .card-overlay {
+        padding: 10px;
+      }
+    
+    
+  }
