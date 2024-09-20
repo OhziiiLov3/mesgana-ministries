@@ -32,18 +32,18 @@ const Navbar = () => {
                     Home
                 </Link>
                 <Link 
-                    to="/about" 
-                    onClick={() => closeMenu("/about")}
-                    className={activeLink === "/about" ? "active" : ""}
-                >
-                    About
-                </Link>
-                <Link 
                     to="/our-work" 
                     onClick={() => closeMenu("/our-work")}
                     className={activeLink === "/our-work" ? "active" : ""}
                 >
                     Our Work
+                </Link>
+                <Link 
+                    to="/contact" 
+                    onClick={() => closeMenu("/contact")}
+                    className={activeLink === "/contact" ? "active" : ""}
+                >
+                    Contact
                 </Link>
                 <Link 
                     to="/get-involved" 

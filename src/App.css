@@ -5,18 +5,27 @@
   --secondary-yellow: #EEBA2B; /* medium Yellow */
   --secondary-color: #333333; /* Dark gray */
   --darker-yellow: #e09c00; /* Darker yellow */
-  --background-color: #F7EDE2; /* Light gray for background */
+  --background-color: #f7EDE2; /* Light gray for background */
 }
 
 
 *{
   box-sizing: border-box;
-  max-height: 100vh;
   margin: 0;
 }
-
 
 body{
   font-family:  "Montserrat", sans-serif;
 }
 
+
+.app{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.main-content{
+  flex:1;
+}
