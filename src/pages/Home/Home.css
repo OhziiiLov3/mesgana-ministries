@@ -27,12 +27,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px; /* Add padding for spacing */
+    padding: 0 50px; 
     color: #fff;
   }
   
   .hero-content-col-1, .hero-content-col-2 {
-    flex: 1; /* Both columns will take equal width */
+    flex: 1; 
   }
   
   .hero-content-col-1 {
@@ -201,17 +201,17 @@
       flex: none;
       width: 100%;
       margin-left: 0;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
   
     .hero-content-col-1 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       justify-content: center;
-      margin-top: 20px;
+      margin-top: 10px;
     }
   
     .hero-content-col-2 h1 {
-      font-size: 1.2rem;
+      font-size: .95rem;
     }
   
     .yellow-banner {
