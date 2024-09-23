@@ -120,13 +120,33 @@
     justify-content: center;
   }
   
-  .our-work-col-2 img {
+  .image-container {
+    position: relative;
     width: 100%;
-    height: auto;
     max-width: 500px;
     border-radius: 10px;
+    overflow: hidden; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(79, 79, 77, 0.2);
+    border-radius: 10px;
+    pointer-events: none; 
+  }
+  
   .bottom{
     background-color: var(--background-color);
   }
@@ -275,6 +295,10 @@
   
     .our-work-col-1 {
       margin-bottom: 20px;
+    }
+
+    .our-work-col-2 {
+      margin-top: 20px;
     }
   
     .our-work-col-2 img {

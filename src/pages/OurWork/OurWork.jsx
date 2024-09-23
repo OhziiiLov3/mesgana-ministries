@@ -54,10 +54,15 @@ const OurWork = () => {
             stronger families, communities, and a brighter tomorrow.
           </span>
         </div>
-
+          
         <div className="our-work-col-2">
-          <img src="src/assets/images/mission-image.png" alt="" />
+          <div className="image-container">
+      <img src="src/assets/images/mission-image.png" alt="Mission" />
+      <div className="image-overlay"></div>
+    </div>
         </div>
+
+
       </section>
 
       <section className="bottom">
