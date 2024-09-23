@@ -1,0 +1,247 @@
+.testimonies {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+/* Hero */
+.testimony-hero {
+  position: relative;
+  height: 25vh;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.testimony-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: center 20%;
+}
+
+.testimony-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimony-hero-content {
+  color: white;
+  padding: 20px;
+  margin-right: 550px;
+  text-align: left;
+}
+
+.testimony-hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.testimony-hero-content .underline {
+  width: 100%;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.testimony-hero-content p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.testimony-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Testimony rows */
+.testimony-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+  width: 50%;
+}
+
+.testimony-row img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.testimony-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(107, 107, 107, 0.2); 
+    opacity: 1;
+    transition: opacity 0.3s ease; 
+    border-radius: 10px;
+  }
+  
+  
+
+.testimony-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.image-container:hover .testimony-image-overlay {
+    opacity: 1; 
+  }
+  
+  .testimony-content:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1), 0 12px 24px rgba(0, 0, 0, 0.1); /* Spatial effect */
+  }
+  
+
+.testimony-content h3 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.testimony-content .underline {
+  width: 100%;
+  height: 3px;
+  background-color: #f2c94c;
+  margin-bottom: 15px;
+}
+
+.testimony-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.testimony-content span {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.testimony-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+
+    .testimony-hero-content {
+      margin-right: 0;
+      text-align: center;
+    }
+    
+    .testimony-hero-content h1 {
+      font-size: 2rem; 
+    }
+  
+    .testimony-hero-content p {
+      font-size: 0.9rem; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+
+    .testimony-row {
+      flex-direction: column;
+    }
+  
+ 
+    .testimony-row:nth-child(even) {
+      flex-direction: column; 
+    }
+  
+
+    .testimony-row img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .testimony-content {
+      padding: 15px;
+      margin-top: 20px; 
+    }
+  
+  
+    .testimony-content h3 {
+      font-size: 1.5rem;
+    }
+  
+    .testimony-content p {
+      font-size: 0.9rem;
+    }
+  
+    .testimony-content span {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    
+    .testimony-hero {
+      height: 20vh; 
+    }
+  
+    .testimony-hero-content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .testimony-hero-content p {
+      font-size: 0.8rem;
+    }
+  
+    .testimony-content {
+      padding: 10px;
+    }
+  
+    .testimony-content h3 {
+      font-size: 1.2rem;
+    }
+  
+    .testimony-content p {
+      font-size: 0.8rem;
+    }
+  
+    .testimony-content span {
+      font-size: 0.7rem;
+    }
+  
+    .testimony-content .underline {
+      height: 2px; 
+    }
+  }
+  

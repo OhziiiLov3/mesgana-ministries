@@ -7,6 +7,7 @@ import GetInvolved from '../pages/GetInvolved';
 import Footer from './Footer/Footer';
 import Navbar from './Navbar/Navbar';
 import { useState } from 'react';
+import Testimonies from '../pages/Testimonies/Testimonies';
 
 function App() {
   const [activeLink, setActiveLink] = useState(null)
@@ -21,6 +22,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home/>}></Route>
             <Route path="/our-work" element={<OurWork/>}></Route>
+            <Route path="/testimonies" element={<Testimonies/>}></Route>
             <Route path="/contact" element={<Contact/>}></Route>
             <Route path="/get-involved" element={<GetInvolved/>}></Route>
           </Routes>
