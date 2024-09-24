@@ -68,7 +68,7 @@ const Testimonies = () => {
         </div>
         {/* Testimony Three */}
         <div className="testimony-row">
-        <div className="image-container">
+        <div className="testimony-image-container">
           <img src="src/assets/images/testmoniy-img-1.png" alt="" />
           <div className="testimony-image-overlay"></div>
           </div>

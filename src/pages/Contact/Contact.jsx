@@ -59,7 +59,7 @@ const Contact = () => {
           className="banner-image"
         />
         <div className="banner-overlay">
-          <div className="banner-content">
+          <div className="contact-banner-content">
             <h2>Get in Touch</h2>
             <div className="contact-underline"></div>
             <p>Join us in making a difference in East Africa</p>

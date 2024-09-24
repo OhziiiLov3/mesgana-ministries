@@ -40,7 +40,7 @@ const Home = () => {
         
       </div>
 
-      <h2 style={{ marginTop: '20px'}}>Our Programs</h2>
+      <h2 style={{ marginTop: '20px' , fontSize: "1.8rem"}}>Our Programs</h2>
 
  {/* Card Section */}
  <motion.section

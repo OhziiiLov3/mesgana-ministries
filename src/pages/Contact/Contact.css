@@ -178,7 +178,7 @@ label{
 
 /* Banner and Icons Section */
 
-.banner-content{
+.contact-banner-content{
   display: flex;
   flex-direction: column; 
   text-align: left;
@@ -210,12 +210,12 @@ label{
   padding-left: 50px;
 }
 
-.banner-content h2 {
+.contact-banner-content h2 {
   color: white;
   font-size: 2.5rem;
 }
 
-.banner-content p {
+.contact-banner-content p {
   margin-top: 0; 
   font-size: 1.2rem;
   color: white;
