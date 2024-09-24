@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import "../OurWork/OurWork.css";
 
+// Import images
+import heroImage from '../../assets/images/our-work-hero.png';
+import missionImage from '../../assets/images/mission-image.png';
+
 const fadeInVariant = {
   hidden: { opacity: 0, scale: 0.95 },
   visible: { opacity: 1, scale: 1 },
@@ -12,7 +16,7 @@ const OurWork = () => {
       {/* Hero Section */}
       <div className="our-work-hero">
         <motion.img
-          src="src/assets/images/our-work-hero.png"
+          src={heroImage}
           alt="Hero Image"
           className="hero-image"
           initial="hidden"
@@ -21,11 +25,11 @@ const OurWork = () => {
           transition={{ duration: 1.2, ease: "easeOut" }}
         />
         <motion.div 
-        className="our-work-overlay"
-        initial="hidden"
-        animate="visible"
-        variants={fadeInVariant}
-        transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+          className="our-work-overlay"
+          initial="hidden"
+          animate="visible"
+          variants={fadeInVariant}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         >
           <div className="hero-content">
             <h1>Our Work </h1>
@@ -57,12 +61,10 @@ const OurWork = () => {
           
         <div className="our-work-col-2">
           <div className="image-container">
-      <img src="src/assets/images/mission-image.png" alt="Mission" />
-      <div className="image-overlay"></div>
-    </div>
+            <img src={missionImage} alt="Mission" />
+            <div className="image-overlay"></div>
+          </div>
         </div>
-
-
       </section>
 
       <section className="bottom">

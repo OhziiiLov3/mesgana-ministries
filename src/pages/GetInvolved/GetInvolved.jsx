@@ -1,4 +1,5 @@
 import "../GetInvolved/GetInvolved.css";
+import getInvolvedHero from "../../assets/images/testmoniy-img-2.png"
 import donationImage from '../../assets/images/donation-image.jpg';
 
 const GetInvolved = () => {
@@ -13,7 +14,7 @@ const GetInvolved = () => {
     <div className="getInvolved">
       <div className="getInvolved-hero">
         <img
-          src="src/assets/images/testmoniy-img-2.png"
+          src={getInvolvedHero}
           alt="testimony image"
           className="getInvolved-image"
         />
