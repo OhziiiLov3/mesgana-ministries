@@ -56,9 +56,9 @@ const Contact = () => {
         <img
           src="src/assets/images/contact-banner.png"
           alt=""
-          className="banner-image"
+          className="contact-banner-image"
         />
-        <div className="banner-overlay">
+        <div className="contact-banner-overlay">
           <div className="contact-banner-content">
             <h2>Get in Touch</h2>
             <div className="contact-underline"></div>

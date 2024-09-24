@@ -191,13 +191,13 @@ label{
   margin-top: 50px;
 }
 
-.banner-image {
+.contact-banner-image {
   width: 100%;
   height: 25vh;
   object-fit: cover;
 }
 
-.banner-overlay {
+.contact-banner-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -290,15 +290,15 @@ label{
   }
 
   
-  .banner-content {
+  .contact-banner-content {
     padding-left: 10px;
   }
 
-  .banner-content h2 {
+  .contact-banner-content h2 {
     font-size: 1.8rem;
   }
 
-  .banner-content p {
+  .contact-banner-content p {
     font-size: 1rem;
   }
 
@@ -347,11 +347,11 @@ label{
   }
 
   /* Banner content */
-  .banner-content h2 {
+  .contact-banner-content h2 {
     font-size: 1.6rem;
   }
 
-  .banner-content p {
+  .contact-banner-content p {
     font-size: 0.9rem;
   }
 

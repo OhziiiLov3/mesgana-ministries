@@ -79,7 +79,7 @@
     align-items: center;
   }
   
-  .banner-content {
+  .home-banner-content {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -87,14 +87,18 @@
     text-transform: capitalize;
   }
 
-  .banner-content p {
+  .home-banner-content p {
     font-size: 1.2rem;
     margin-top: 5px;
     font-weight: 600;
    
   }
+
+  .programs{
+    color: var(--secondary-color);
+  }
   
-  .banner-button {
+  .home-banner-button {
     padding: 10px 20px;
     background-color: #ffffff;
     color: var(--secondary-yellow);
@@ -106,7 +110,7 @@
     max-width: 50%;
   }
 
-  .banner-button:hover {
+  .home-banner-button:hover {
     background-color: #e09c00;
     color: #ffffff;
   }
@@ -220,10 +224,7 @@
       text-align: center;
     }
   
-    .banner-content {
-        flex-direction: column;
-        margin: 0;
-      }
+    
      /* Card Section */
      .card-section {
         display: flex;
