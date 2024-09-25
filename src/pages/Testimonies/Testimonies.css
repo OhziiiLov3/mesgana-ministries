@@ -175,6 +175,8 @@
   }
    */
   @media (max-width: 768px) {
+    
+
 
     .testimony-row {
       flex-direction: column;
@@ -208,6 +210,19 @@
     .testimony-content span {
       font-size: 0.8rem;
     }
+    .testimony-hero-content {
+        margin-right: 0; 
+        padding: 20px;
+      }
+    
+      .testimony-hero-content h1 {
+        font-size: 2rem; 
+      }
+    
+      .testimony-hero-content p {
+        font-size: 1rem; 
+      }
+    
   }
   
   @media (max-width: 480px) {
