@@ -1,12 +1,16 @@
 import "../Testimonies/Testimonies.css";
+import testimonyHeroImage from "../../assets/images/our-work-hero.png";
+import testimonyImage1 from "../../assets/images/contact-hero.png";
+import testimonyImage2 from "../../assets/images/testmoniy-img-2.png";
+import testimonyImage3 from "../../assets/images/testmoniy-img-1.png";
 
 const Testimonies = () => {
   return (
     <div className="testimonies">
       <div className="testimony-hero">
         <img
-          src="src/assets/images/our-work-hero.png"
-          alt="testimony image"
+          src={testimonyHeroImage}
+          alt="testimony hero"
           className="testimony-image"
         />
         <div className="testimony-overlay">
@@ -20,9 +24,9 @@ const Testimonies = () => {
       <section className="testimony-container">
         {/* Testimony One */}
         <div className="testimony-row">
-        <div className="image-container">
-          <img src="src/assets/images/contact-hero.png" alt="" />
-          <div className="testimony-image-overlay"></div>
+          <div className="image-container">
+            <img src={testimonyImage1} alt="Mariam's story" />
+            <div className="testimony-image-overlay"></div>
           </div>
 
           <div className="testimony-content">
@@ -41,13 +45,13 @@ const Testimonies = () => {
             </p>
             <span>-Mariam, Mother of Two</span>
           </div>
-        
         </div>
+        
         {/* Testimony Two */}
         <div className="testimony-row">
-        <div className="image-container">
-          <img src="src/assets/images/testmoniy-img-2.png" alt="" />
-          <div className="testimony-image-overlay"></div>
+          <div className="image-container">
+            <img src={testimonyImage2} alt="Selam's journey" />
+            <div className="testimony-image-overlay"></div>
           </div>
           <div className="testimony-content">
             <h3>Selam's Journey – Building a Future </h3>
@@ -66,11 +70,12 @@ const Testimonies = () => {
             <span>—Selam, Mother of Three</span>
           </div>
         </div>
+
         {/* Testimony Three */}
         <div className="testimony-row">
-        <div className="testimony-image-container">
-          <img src="src/assets/images/testmoniy-img-1.png" alt="" />
-          <div className="testimony-image-overlay"></div>
+          <div className="image-container">
+            <img src={testimonyImage3} alt="Dawit's success" />
+            <div className="testimony-image-overlay"></div>
           </div>
           <div className="testimony-content">
             <h3>Dawit's Success – A Dream Realized </h3>
@@ -95,3 +100,4 @@ const Testimonies = () => {
 };
 
 export default Testimonies;
+
