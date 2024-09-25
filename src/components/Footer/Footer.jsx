@@ -3,7 +3,7 @@ import "./Footer.css";
 import logo from "../../assets/images/logo.png";
 import { FaFacebookF, FaInstagram, FaPaypal } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({setActiveLink}) => {
   return (
     <div className="footer-container">
       <div className="footer-content">
