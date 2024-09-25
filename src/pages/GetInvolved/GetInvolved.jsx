@@ -44,12 +44,14 @@ const GetInvolved = () => {
         our first priority in our hearts by giving the first 10% of our income.</p>
             <p><strong>Support us by donating via PayPal.</strong></p>
           </div>
-          <img src={donationImage} alt="Ready to Give?" />
-          <div className="donation-overlay">
-            <h3>Ready to give?</h3>
-            <button className="donation-button" onClick={handleRedirectToPayPal}>
-              Support Here
-            </button>
+          <div className="donation-image-container">
+            <img src={donationImage} alt="Ready to Give?" />
+            <div className="donation-overlay-text">
+              <h3>Ready to give?</h3>
+              <button className="donation-button" onClick={handleRedirectToPayPal}>
+                Support Here
+              </button>
+            </div>
           </div>
         </div>
       </section>

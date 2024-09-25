@@ -100,14 +100,14 @@
 .donation-content {
     display: flex;
     flex-direction: row; 
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start; 
+    justify-content: space-between; 
     gap: 20px;
     padding: 20px;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
+    position: relative; 
 }
 
 .donation-text h3{
@@ -121,27 +121,25 @@
     object-fit: cover;
     position: relative;
 }
+.donation-text {
+    flex: 1;
+}
 
-.donation-overlay {
-    position: absolute;
-    top: 0;
-    right: 0; 
-    width: 400px;
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.donation-image-container {
+    position: relative;
+}
+
+.donation-overlay-text {
+    position: absolute; 
+    top: 75%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     color: white;
-    text-align: center;
-    margin: 20px;
+    text-align: center; 
+    z-index: 1; 
 }
 
-.donation-overlay h3{
-    margin-top:120px;
-}
 
 .donation-button {
     background-color: #f2c94c;
@@ -153,7 +151,6 @@
     text-transform: uppercase;
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-   
 }
 
 .donation-button:hover {
@@ -190,23 +187,18 @@
 
     /* Donation Section */
     .donation-content {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 10px;
     }
 
     .donation-content img {
-        width: 380px; 
-        height: 300px; 
+        width: 100%; 
+        height: auto;
     }
 
-    .donation-overlay {
-        position: absolute; 
-        top: 38%;
-        left: 0;
-        width: 380px; 
-        height: 300px; 
-        background-color: rgba(0, 0, 0, 0.3);
-       
+    .donation-overlay-text {
+        top: 70%; 
     }
 
     .donation-overlay h3 {
