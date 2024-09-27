@@ -250,6 +250,33 @@ label{
   font-size: 1.5rem; 
 }
 
+.popup-message {
+  position: fixed;
+  top: 20px; /* Distance from the top */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(242, 201, 76, 0.9); /* Soft yellow background */
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  z-index: 1000; 
+  transition: opacity 0.5s ease;
+}
+
+.popup-message::after {
+  content: '';
+  position: absolute;
+  top: 100%; 
+  left: 50%;
+  margin-left: -5px; 
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(242, 201, 76, 0.9) transparent transparent transparent; /* Arrow color */
+}
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
 
