@@ -52,7 +52,7 @@
   
   .getInvolved-hero-content .underline {
     width: 100%;
-    height: 4px;
+    height: 2px;
     background-color: #ffffff;
   }
   
@@ -112,6 +112,14 @@
 
 .donation-text h3{
  font-size: 2rem;
+}
+
+.donation-content span{
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 500;
+    color: var(--secondary-color);
+
 }
 
 .donation-content img {

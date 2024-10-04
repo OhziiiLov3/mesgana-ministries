@@ -37,7 +37,7 @@
 .hero-content-col-1 {
   display: flex;
   justify-content: flex-start;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .hero-content-col-2 {
@@ -48,7 +48,7 @@
 }
 
 .hero-content-col-2 h1 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-family: 700;
 }
 
@@ -198,13 +198,13 @@
       flex: none;
       width: 100%;
       margin-left: 0;
-      margin-bottom: 60px;
+      margin-bottom: 100px;
     }
   
     .hero-content-col-1 {
       font-size: 1.2rem;
       justify-content: center;
-      margin-top: 15px;
+      margin-top: 20px;
     }
   
     .hero-content-col-2 h1 {

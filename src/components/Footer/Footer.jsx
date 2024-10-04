@@ -22,8 +22,8 @@ const Footer = ({setActiveLink}) => {
           </h3>
           <h4>Get in touch</h4>
           <ul>
-            <li>Email: contact@mesgana.org</li>
-            <li>Tel: +251-123-456-789</li>
+            <li>Email: Mesgana5219@gmail.com</li>
+            <li>Tel: 510-393-9200</li>
             <li>Address: Oakland, Ca</li>
           </ul>
           <div className="icon-container">
