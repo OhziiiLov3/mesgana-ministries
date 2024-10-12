@@ -33,7 +33,7 @@ const Footer = ({setActiveLink}) => {
             <a href="https://www.instagram.com" className="icon">
               <FaInstagram />
             </a>
-            <a href="https://www.paypal.com" className="icon">
+            <a href="https://www.paypal.com/donate/?hosted_button_id=SSMEPEU49TVXY" className="icon">
               <FaPaypal />
             </a>
           </div>

@@ -6,7 +6,7 @@ const GetInvolved = () => {
 
   const handleRedirectToPayPal = () => {
     const amount = '10.00'; // Set the donation amount here
-    const paypalUrl = `https://www.sandbox.paypal.com/donate/?hosted_button_id=E9T7QXTLFUZJN`;
+    const paypalUrl = `https://www.paypal.com/donate/?hosted_button_id=SSMEPEU49TVXY`;
     window.open(paypalUrl, '_blank');
   };
 
